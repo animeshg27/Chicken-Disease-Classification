@@ -22,8 +22,7 @@ stages:
     outs:
       - artifacts/prepare_base_model
 
-
-training:
+  training:
     cmd: python src/cnnClassifier/pipeline/stage_03_training.py
     deps:
       - src/cnnClassifier/pipeline/stage_03_training.py
@@ -39,8 +38,7 @@ training:
     outs:
       - artifacts/training/model.h5
 
-
-evaluation:
+  evaluation:
     cmd: python src/cnnClassifier/pipeline/stage_04_evaluation.py
     deps:
       - src/cnnClassifier/pipeline/stage_04_evaluation.py

@@ -66,7 +66,7 @@ open up you local host and port
 
 ### 3. Create ECR repo to store/save docker image
 ```
-- Save the URI: 566373416292.dkr.ecr.us-east-1.amazonaws.com/chicken
+- Save the URI: 767397771600.dkr.ecr.us-east-1.amazonaws.com/object-detection
 ```
 
 ### 4. Create EC2 machine (Ubuntu)
@@ -80,7 +80,7 @@ sudo apt-get upgrade
 
 #required
 
-curl -fsSL https://get.docker.com -o get-docker.sh
+curl -fsSL https://get.docker.com -o get-docker.sh  // to install docker in AWS
 
 sudo sh get-docker.sh
 
